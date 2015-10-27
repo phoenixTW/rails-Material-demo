@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag 'posts/posts', media: 'all', 'data-turbolinks-track' => true %>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+<p id="notice"><%= notice %></p>
+
+<main class="mdl-layout__content custom-body-layout">
+  <div class="page-content">
+    <% @posts.each do |post| %>
+      <%= render :partial => "posts/single_post", :locals => {:post => post} %>
+    <% end %>
+  </div>
+</main>
