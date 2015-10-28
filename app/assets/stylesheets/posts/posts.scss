@@ -8,8 +8,13 @@
   left: 0;
 }
 
-.custom-body-layout{
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
+.create-plus-button {
+  position: absolute;
+  z-index: 10;
+  right: 7em;
+  bottom: 8em;
+
+  &:hover{
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  }
 }
