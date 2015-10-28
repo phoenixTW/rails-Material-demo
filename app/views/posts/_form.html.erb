@@ -20,16 +20,10 @@
       <%= f.label :title, :class => "mdl-textfield__label" %>
     </div>
     <div id="new-post-editor" class="mdl-textfield mdl-js-textfield width-800">
-      <%= f.text_area :body, :placeholder => "Enter your posts", :class => "width-800 height-400",
-        editor_options: {
-          alert_unsaved: true,
-          image: false
-        }
-        %>
+      <%= f.text_area :body, :placeholder => "Enter your posts", :class => "width-800 height-400 custom-textarea" %>
     </div>
     <div>
-      <button id="new-post-submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Save</button>
-
+      <%= f.submit "Save", :class => "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %>
     </div>
   <% end %>
 
