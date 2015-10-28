@@ -29,5 +29,12 @@ body a {
 }
 
 .display-block {
-  display: block; 
+  display: block;
+}
+
+.header-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00838F;
 }
